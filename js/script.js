@@ -18,7 +18,8 @@ reviewButton.addEventListener('click', (event) => {
           reviewName.value = "Anonymous";
       }  
 
-      reviewTemplate = `<div class="card h-100">
+      reviewTemplate = `<div class="col-lg-4 col-md-6 py-3">
+                          <div class="card h-100">
                             <div class="card-body">
                                 <h4 class="card-title">${reviewTitle.value}</h4>
                                 <blockquote class="blockquote mb-0">
@@ -26,9 +27,11 @@ reviewButton.addEventListener('click', (event) => {
                                     <footer class="text-end blockquote-footer"><i>${reviewName.value}</i></footer>
                                 </blockquote>
                             </div>
-                        </div>`;
+                          </div>
+                        </div>
+                      `;
 
-      reviewsRow.lastElementChild.innerHTML += reviewTemplate;
+      reviewsRow.innerHTML += reviewTemplate;
 
       // Clear input review
           reviewTitle.value = '';        
