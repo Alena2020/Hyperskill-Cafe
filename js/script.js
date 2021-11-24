@@ -33,9 +33,9 @@ reviewButton.addEventListener('click', (event) => {
 
       reviewsRow.innerHTML += reviewTemplate;
 
-      // Clear input review
-          reviewTitle.value = '';        
-          reviewText.value = '';        
-          reviewName.value = '';
-  }
+      // // Clear input review
+      //     reviewTitle.value = '';        
+      //     reviewText.value = '';        
+      //     reviewName.value = '';
+  } 
 });
